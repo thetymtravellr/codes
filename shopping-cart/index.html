@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl font-semibold">My Shopping Cart</h1>
+    </header>
+    <main class="bg-gray-300 my-12">
+      <section
+        class="max-w-screen-xl bg-white phone-section flex justify-around items-center my-12 mx-auto text-xl font-medium"
+      >
+        <div class="product-img w-1/5">
+          <img class="w-3/4" src="./images/product-1.png" alt="" />
+        </div>
+        <div class="product-name">
+          <h3 class="">iPhone 11 128GB Black</h3>
+        </div>
+        <div class="product-quantity">
+          <button><i class="uil uil-minus-square"></i></button>
+          <input
+            class="w-12 bg-gray-300 rounded-xl text-center"
+            type="number"
+            value="1"
+          />
+          <button><i class="uil uil-plus-square"></i></button>
+        </div>
+        <div class="product-price">
+          <h5>$1219</h5>
+        </div>
+        <div class="product-remove">
+          <img src="./images/remove.png" alt="" />
+        </div>
+      </section>
+      <section
+        class="case-section max-w-screen-xl bg-white flex justify-around items-center mx-auto text-xl font-medium"
+      >
+        <div class="product-img w-1/5">
+          <img class="w-3/4" src="./images/product-2.png" alt="" />
+        </div>
+        <div class="product-name">
+          <h3 class="">iPhone 11 128GB Black</h3>
+        </div>
+        <div class="product-quantity">
+          <button><i class="uil uil-minus-square"></i></button>
+          <input
+            class="w-12 bg-gray-300 rounded-xl text-center"
+            type="number"
+            value="1"
+          />
+          <button><i class="uil uil-plus-square"></i></button>
+        </div>
+        <div class="product-price">
+          <h5>$1219</h5>
+        </div>
+        <div class="product-remove">
+          <img src="./images/remove.png" alt="" />
+        </div>
+      </section>
+      <section class="total-section"></section>
+      <button>Check Out</button>
+    </main>
+  </body>
+</html>
