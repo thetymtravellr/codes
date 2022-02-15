@@ -12,62 +12,89 @@
     />
   </head>
   <body>
-    <header>
+    <header class="max-w-screen-xl mx-auto">
       <h1 class="text-4xl font-semibold">My Shopping Cart</h1>
     </header>
-    <main class="bg-gray-300 my-12">
+    <main class="bg-gray-200 my-12 max-w-screen-xl mx-auto p-12">
       <section
-        class="max-w-screen-xl bg-white phone-section flex justify-around items-center my-12 mx-auto text-xl font-medium"
+        class="bg-white phone-section flex justify-around items-center my-12 mx-auto text-xl font-medium"
       >
         <div class="product-img w-1/5">
           <img class="w-3/4" src="./images/product-1.png" alt="" />
         </div>
-        <div class="product-name">
+        <div class="product-name w-1/5">
           <h3 class="">iPhone 11 128GB Black</h3>
         </div>
         <div class="product-quantity">
-          <button><i class="uil uil-minus-square"></i></button>
+          <button id="phone-minus"><i class="uil uil-minus-square"></i></button>
           <input
+            id="phone-input"
             class="w-12 bg-gray-300 rounded-xl text-center"
             type="number"
-            value="1"
+            min="0"
+            value="0"
           />
-          <button><i class="uil uil-plus-square"></i></button>
+          <button id="phone-plus"><i class="uil uil-plus-square"></i></button>
         </div>
         <div class="product-price">
-          <h5>$1219</h5>
+          <h5>$<span id="phone-price">0</span></h5>
         </div>
         <div class="product-remove">
           <img src="./images/remove.png" alt="" />
         </div>
       </section>
       <section
-        class="case-section max-w-screen-xl bg-white flex justify-around items-center mx-auto text-xl font-medium"
+        class="case-section bg-white flex justify-around items-center my-12 mx-auto text-xl font-medium"
       >
         <div class="product-img w-1/5">
           <img class="w-3/4" src="./images/product-2.png" alt="" />
         </div>
-        <div class="product-name">
-          <h3 class="">iPhone 11 128GB Black</h3>
+        <div class="product-name w-1/5">
+          <h3 class="">iPhone 11 Silicone Case - Black</h3>
         </div>
         <div class="product-quantity">
-          <button><i class="uil uil-minus-square"></i></button>
+          <button id="case-minus"><i class="uil uil-minus-square"></i></button>
           <input
+            id="case-input"
             class="w-12 bg-gray-300 rounded-xl text-center"
             type="number"
-            value="1"
+            min="0"
+            value="0"
           />
-          <button><i class="uil uil-plus-square"></i></button>
+          <button id="case-plus"><i class="uil uil-plus-square"></i></button>
         </div>
         <div class="product-price">
-          <h5>$1219</h5>
+          <h5>$<span id="case-price">0</span></h5>
         </div>
         <div class="product-remove">
           <img src="./images/remove.png" alt="" />
         </div>
       </section>
-      <section class="total-section"></section>
-      <button>Check Out</button>
+      <section class="total-section px-16 mb-12 bg-white">
+        <div class="flex justify-between">
+          <h3 class="text-2xl font-semibold">subtotal:</h3>
+          <h3 class="text-2xl font-semibold">$<span id="sub-total">0</span></h3>
+        </div>
+        <div class="flex justify-between">
+          <h3 class="text-2xl font-semibold">
+            tax<span class="text-sm">(10%)</span>:
+          </h3>
+          <h3 class="text-2xl font-semibold">$<span id="tax">0</span></h3>
+        </div>
+        <div class="flex justify-between">
+          <h3 class="text-2xl font-semibold">total:</h3>
+          <h3 class="text-2xl font-semibold">$<span id="total">0</span></h3>
+        </div>
+      </section>
+      <div class="text-right">
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded"
+        >
+          Check Out
+        </button>
+      </div>
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
